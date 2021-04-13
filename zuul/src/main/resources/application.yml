@@ -1,0 +1,14 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    server-url:
+      defaultZone: http://locathost:8761/eureka/
+zuul:
+  eureka:
+    enabled: true
+  routes:
+    provider: /p/**
